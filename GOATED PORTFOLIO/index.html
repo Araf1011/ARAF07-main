@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Araf - Frontend Developer & ML/AI Enthusiast. Portfolio showcasing web development projects, skills, certifications, and professional experience.">
+    <meta name="keywords"
+        content="Frontend Developer, Web Developer, JavaScript, HTML, CSS, Python, Machine Learning, AI, Portfolio, Bangladesh">
+    <meta name="author" content="Araf">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arafx07.netlify.app/">
+    <meta property="og:title" content="Araf07 - Frontend Developer & ML/AI Enthusiast">
+    <meta property="og:description"
+        content="Portfolio showcasing web development projects, skills, certifications, and professional experience.">
+    <meta property="og:image" content="https://arafx07.netlify.app/images/MyPortfolio.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arafx07.netlify.app/">
+    <meta property="twitter:title" content="Araf07 - Frontend Developer & ML/AI Enthusiast">
+    <meta property="twitter:description"
+        content="Portfolio showcasing web development projects, skills, certifications, and professional experience.">
+    <meta property="twitter:image" content="https://arafx07.netlify.app/images/MyPortfolio.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <title>Araf07 | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Texture Overlay -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Accessibility -->
+
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="custom-cursor-follower" aria-hidden="true"></div>
+
+
+
+    <!-- Navigation -->
+    <header class="header-list">
+        <div class="container header-container">
+            <div class="local-time-widget" id="localTimeWidget">
+                <span class="time-label">Chittagong: </span>
+                <span class="time-value" id="liveTime">00:00:00</span>
+                <span class="time-icon">🌙</span>
+            </div>
+            <nav class="div-list">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="ul-list" id="navMenu">
+                    <li class="active"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-gear"></i> Skills</a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#project"><i class="fa-solid fa-code"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="container">
+                <div class="home-container">
+                    <div class="info-home">
+                        <div class="home-p">
+                            <span class="home-s"></span> Available for new opportunities
+                        </div>
+                        <h1 class="heading-xl">Hi, I'm <span class="text-gradient">Araf</span></h1>
+                        <h3 class="typing-target">Frontend Developer & AI Enthusiast</h3>
+                        <div class="info-p">
+                            <p>I build exceptional digital experiences where code meets creativity. Focused on creating
+                                user-centric interfaces that are as beautiful as they are functional.</p>
+                        </div>
+                        <div class="info-p2">
+                            <p><i class="fa-solid fa-location-dot"></i> Chittagong, Bangladesh</p>
+                            <p><i class="fa-solid fa-briefcase"></i> Open to Opportunities</p>
+                        </div>
+                        <div class="btnn">
+                            <a href="#contact" class="btn-home1">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                            <button class="btn-home2" id="downloadCV">
+                                <i class="fa-solid fa-download"></i> Download CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="home-image-wrapper">
+                        <!-- Orbiting Tech Skills -->
+                        <div class="tech-bubble tb-1" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="tech-bubble tb-2" title="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="tech-bubble tb-3" title="React"><i class="fa-brands fa-react"></i></div>
+                        <div class="tech-bubble tb-4" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+                        <div class="tech-bubble tb-5" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="tech-bubble tb-6" title="Java"><i class="fa-brands fa-java"></i></div>
+                        <div class="tech-bubble tb-7" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="tech-bubble tb-8" title="C"><i class="fa-solid fa-code"></i></div>
+
+                        <div class="image-frame">
+                            <img src="images/img2.jpg" alt="Araf" loading="eager">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="heading-lg">The Person Behind the Code</h2>
+                </div>
+                <div class="about-container">
+                    <div class="about-image-wrapper">
+                        <div class="image-inner">
+                            <img src="images/img.jpg" alt="Araf" loading="lazy">
+                            <div class="experience-badge">
+                                <span class="badge-num">01+</span>
+                                <span class="badge-text">Years of<br>Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-about">
+                        <div class="about-text">
+                            <p class="lead-text">I am a Computer Science student and aspiring Software Engineer with a
+                                relentless focus on creating high-performance digital solutions.</p>
+                            <p>My journey at the <strong>International Islamic University Chittagong (IIUC)</strong> is
+                                more than just academic; it's a pursuit of technical excellence. I bridge the gap
+                                between complex backend logic and intuitive, aesthetic frontend design.</p>
+                            <p>I thrive in environments that challenge my problem-solving skills, constantly evolving my
+                                stack to include the latest advancements in Web Architecture and Artificial
+                                Intelligence.</p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                                <div>
+                                    <h3>25+</h3>
+                                    <p>Projects Built</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                                <div>
+                                    <h3>15+</h3>
+                                    <p>Tech Stack</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a href="#contact" class="btn-home1">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">My Arsenal</span>
+                    <h2 class="heading-lg">Technical Expertise</h2>
+                </div>
+                <div class="skills-card-grid">
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-brands fa-html5"></i></div>
+                        <div class="mini-info">
+                            <h3>Structure</h3>
+                            <p>HTML5 / Semantic Web</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="mini-info">
+                            <h3>Aesthetics</h3>
+                            <p>CSS3 / Layouts</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-brands fa-js"></i></div>
+                        <div class="mini-info">
+                            <h3>Behavior</h3>
+                            <p>JavaScript / ES6+</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="mini-info">
+                            <h3>Intelligence</h3>
+                            <p>Python / ML Core</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-solid fa-code-merge"></i></div>
+                        <div class="mini-info">
+                            <h3>Version</h3>
+                            <p>Git / GitHub</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="mini-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <div class="mini-info">
+                            <h3>Logic</h3>
+                            <p>Algo / Struct</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Marquee -->
+                <div class="tech-stack-marquee">
+                    <div class="marquee-track">
+                        <!-- Original Set -->
+                        <div class="marquee-item" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+                        <div class="marquee-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="marquee-item" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="marquee-item" title="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="marquee-item" title="React"><i class="fa-brands fa-react"></i></div>
+                        <div class="marquee-item" title="Node.js"><i class="fa-brands fa-node"></i></div>
+                        <div class="marquee-item" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="marquee-item" title="Docker"><i class="fa-brands fa-docker"></i></div>
+                        <div class="marquee-item" title="AWS"><i class="fa-brands fa-aws"></i></div>
+                        <div class="marquee-item" title="Figma"><i class="fa-brands fa-figma"></i></div>
+                        <div class="marquee-item" title="Java"><i class="fa-brands fa-java"></i></div>
+                        <div class="marquee-item" title="Linux"><i class="fa-brands fa-linux"></i></div>
+
+                        <!-- Duplicate Set for Seamless Loop -->
+                        <div class="marquee-item" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+                        <div class="marquee-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="marquee-item" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="marquee-item" title="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="marquee-item" title="React"><i class="fa-brands fa-react"></i></div>
+                        <div class="marquee-item" title="Node.js"><i class="fa-brands fa-node"></i></div>
+                        <div class="marquee-item" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="marquee-item" title="Docker"><i class="fa-brands fa-docker"></i></div>
+                        <div class="marquee-item" title="AWS"><i class="fa-brands fa-aws"></i></div>
+                        <div class="marquee-item" title="Figma"><i class="fa-brands fa-figma"></i></div>
+                        <div class="marquee-item" title="Java"><i class="fa-brands fa-java"></i></div>
+                        <div class="marquee-item" title="Linux"><i class="fa-brands fa-linux"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Footprint - GitHub Activity -->
+        <section class="github-activity reveal" id="activity">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Live Pulse</span>
+                    <h2 class="heading-lg">Digital Footprint</h2>
+                </div>
+                <div class="activity-container">
+                    <!-- Tab Navigation -->
+                    <div class="footprint-tabs">
+                        <button class="footprint-tab active" data-tab="github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </button>
+                        <button class="footprint-tab" data-tab="leetcode">
+                            <i class="fa-solid fa-code"></i> LeetCode
+                        </button>
+                        <button class="footprint-tab" data-tab="codeforces">
+                            <i class="fa-solid fa-chart-line"></i> Codeforces
+                        </button>
+                    </div>
+
+                    <!-- Slider Viewport -->
+                    <div class="footprint-slider-viewport">
+                        <div class="footprint-slider" id="footprintSlider">
+                            <!-- GitHub Panel -->
+                            <div class="footprint-panel" id="github-panel">
+                                <div class="panel-grid">
+                                    <div id="github-pulse-grid" class="pulse-list">
+                                        <div class="pulse-skeleton"></div>
+                                    </div>
+                                    <div class="visual-box">
+                                        <h3>Contribution Pulse</h3>
+                                        <img src="https://raw.githubusercontent.com/Araf1011/Araf1011/output/github-contribution-grid-snake.svg"
+                                            alt="GitHub Snake" class="contribution-graph">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LeetCode Panel -->
+                            <div class="footprint-panel" id="leetcode-panel">
+                                <div class="panel-grid">
+                                    <div class="pulse-list" id="leetcode-pulse">
+                                        <div class="pulse-skeleton"></div>
+                                    </div>
+                                    <div class="visual-box">
+                                        <h3>Problem Solving</h3>
+                                        <div class="lc-radial-visual" id="lcVisual">
+                                            <span id="lcSolvedCount">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Codeforces Panel -->
+                            <div class="footprint-panel" id="codeforces-panel">
+                                <div class="panel-grid">
+                                    <div class="pulse-list" id="codeforces-pulse">
+                                        <div class="pulse-skeleton"></div>
+                                    </div>
+                                    <div class="visual-box">
+                                        <h3>Competition Rank</h3>
+                                        <div class="cf-rating-display">
+                                            <span class="cf-value" id="cfRatingValue">0</span>
+                                            <div class="cf-label" id="cfRankLabel">Loading...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Toolbelt - Daily Drivers -->
+        <section class="tools-section reveal" id="tools">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Efficiency</span>
+                    <h2 class="heading-lg">The Toolbelt</h2>
+                </div>
+                <div class="tools-bento">
+                    <div class="tool-card main-tool">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>VS Code</h3>
+                        <p>Primary editor for everything frontend and AI.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-brands fa-docker"></i>
+                        <h3>Docker</h3>
+                        <span>Containerization</span>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-brands fa-figma"></i>
+                        <h3>Figma</h3>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-terminal"></i>
+                        <h3>Zsh / OhMyZsh</h3>
+                        <span>Terminal Workflow</span>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Postman</h3>
+                        <span>API Testing</span>
+                    </div>
+                    <div class="tool-card accent-tool">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>PyTorch</h3>
+                        <p>Deep Learning & ML Workflows</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">The Roadmap</span>
+                    <h2 class="heading-lg">My Professional Journey</h2>
+                </div>
+                <div class="roadmap-container">
+                    <div class="road-path"></div>
+
+                    <!-- Milestone 01 -->
+                    <div class="timeline-item stop-left">
+                        <div class="stop-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - Present</span>
+                            <h3>B.Sc in Computer Science</h3>
+                            <h4>IIUC</h4>
+                            <p>Mastering core fundamentals, algorithms, and embarking on the path of software
+                                engineering.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 02 -->
+                    <div class="timeline-item stop-right">
+                        <div class="stop-marker"><i class="fa-solid fa-code"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3>Frontend Specialization</h3>
+                            <h4>Self-driven Stops</h4>
+                            <p>Designing high-fidelity interfaces and building performant web applications with modern
+                                tech.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 03 -->
+                    <div class="timeline-item stop-left">
+                        <div class="stop-marker"><i class="fa-solid fa-robot"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Future Destination</span>
+                            <h3>Full Stack & AI Engineer</h3>
+                            <h4>Career Horizon</h4>
+                            <p>Bridging the gap between intelligent algorithms and seamless user experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Compact Projects Section -->
+        <section class="project" id="project">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Work</span>
+                    <h2 class="heading-lg">Recent Projects</h2>
+                </div>
+                <div class="project-grid-compact">
+                    <!-- Project 01 -->
+                    <div class="project-compact-card">
+                        <div class="pc-image">
+                            <img src="images/MyPortfolio.png" alt="Portfolio">
+                            <div class="pc-overlay">
+                                <a href="https://github.com/Araf1011" target="_blank" class="pc-btn"
+                                    title="GitHub Source"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://arafx07.netlify.app" target="_blank" class="pc-btn"
+                                    title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="pc-info">
+                            <span class="pc-tag">Web Design</span>
+                            <h3>Premium Portfolio</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-compact-card">
+                        <div class="pc-image">
+                            <img src="images/ComingSoon.png" alt="Upcoming">
+                            <div class="pc-overlay">
+                                <a href="#" class="pc-btn" title="GitHub Source"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="pc-btn" title="Live Demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-info">
+                            <span class="pc-tag">AI / ML</span>
+                            <h3>Nexus Intelligence</h3>
+                        </div>
+                    </div>
+
+                    <!-- Project 03 -->
+                    <div class="project-compact-card">
+                        <div class="pc-image">
+                            <img src="images/ComingSoon.png" alt="Upcoming">
+                            <div class="pc-overlay">
+                                <a href="#" class="pc-btn" title="GitHub Source"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="pc-btn" title="Live Demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-info">
+                            <span class="pc-tag">E-Commerce</span>
+                            <h3>Future Store</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="heading-lg">Ready to Collaborate?</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-presentation">
+                        <div class="contact-intro">
+                            <p>I'm always looking for interesting projects and technical collaborations. Whether you
+                                have a specific vision or just want to discuss the latest in tech, let's connect.</p>
+                        </div>
+
+                        <div class="visual-contact-info">
+                            <div class="contact-card-mini">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-text">
+                                    <span>Email</span>
+                                    <p>myselfaraf1457@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-card-mini">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-text">
+                                    <span>Location</span>
+                                    <p>Chittagong, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="contact-card-mini">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-text">
+                                    <span>WhatsApp</span>
+                                    <p>+8801887789984</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-mini-grid">
+                            <a href="https://github.com/Araf1011" target="_blank" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/mohammad-hossain-b11350278/" target="_blank"
+                                title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/8801887789984" target="_blank" title="WhatsApp"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required id="user_name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required id="user_email">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="How can I help you?" rows="5" required id="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-home1" style="width: 100%;">Send Message <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--card-border);">
+        <div class="container">
+            <p style="color: var(--text-muted);">&copy; 2026 Araf. All rights reserved. Created with &hearts; for the
+                web.</p>
+        </div>
+    </footer>
+
+    <!-- Araf AI Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <button class="chatbot-trigger" id="chatTrigger" aria-label="Open AI Assistant">
+            <i class="fa-solid fa-robot"></i>
+            <span class="trigger-ping"></span>
+        </button>
+
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>Araf's AI</h3>
+                        <span class="online-status">Online</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hi! I'm Araf's AI assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="quick-replies">
+                    <button class="quick-reply-btn" data-query="projects">Projects</button>
+                    <button class="quick-reply-btn" data-query="skills">Skills</button>
+                    <button class="quick-reply-btn" data-query="hire">Hire Me</button>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                    <button id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
